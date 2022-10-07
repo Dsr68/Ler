@@ -1,19 +1,41 @@
 <!DOCTYPE HTML>
-<html lang=”pt-br”>
+<html lang=pt-br>
 <head>
-  <meta charset=”UTF-8”>
+  <meta charset=UTF-8>
   <title></title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min"/>
   <link rel="stylesheet" type="text/css" href="css/main.css"/>
 </head>
 <body>
+	<nav id="barra" class="navbar bg-light">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#">
+			<img src="imagens/livro.png" width="30" height="24" class="d-inline-block align-text-top">
+			Leitura+
+		  </a>
+		</div>
+	  </nav>
 	<div id="container">
-		<div id="form"> 
-			<div  class="mb-3">
-				<label for="exampleFormControlInput1" class="form-label">Email address</label>
-				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-			</div>
-	   </div>
+		<div id="campo-login">
+			<h1 id="titulo-login">Login</h1>
+			<div id="form"> 
+				<div id="email" class="mb-3">
+					<label for="exampleFormControlInput1" class="form-label">E-mail</label>
+					<input class="entrada" type="email" class="form-control" id="exampleFormControlInput1">
+				</div>
+				<div id="senha" class="mb-3">
+					<label for="exampleFormControlInput1" class="form-label">Senha</label>
+					<input class="entrada" id="senha" type="password" class="form-control" id="exampleFormControlInput2">
+				</div>
+				<div id="botao">
+					<button class="entrada" id="submit" class="btn btn-primary" type="submit">Entrar</button>
+				</div>
+				<div id="links">
+					<a class="links" href="#">Recupera senha</a>
+					<a class="links" href="view/cadastrar.html">Cadastrar</a>
+				</div>
+		   </div>
+		</div>
 	</div>
 </body>
 </html>

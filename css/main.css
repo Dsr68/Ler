@@ -1,19 +1,116 @@
+body{
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+}
+
+#barra{
+	height: 65px;
+	background: #8c9cab;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+img{
+	margin-left: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	font-weight: bolder;
+	font-size: 25px;
+}
+
 #container{
-	width: 100%;
-	height: 100%;
-	background: #6C7A89;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../imagens/fundo.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#campo-login{
+	padding: 50px;
+	padding-top: 0px;
+	background: #8c9cab;
+	box-sizing: content-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-bottom: 45px;
+}
+
+#form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#titulo-login{
+	font-size: 30px;
+	font-family: 'Lucida Sans', sans-serif;
+}
+
+label{
+	margin-right: 5px;
+}
+
+.entrada{
+	width: 250px;
+	height: 28px;
+}
+
+#email{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 }
 
-#form{
-	width: 300px;
-	height: 300px;
-	background: #fff;
+#senha{
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
-body{
+#botao{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 295px;
+}
+
+#submit{
+	box-sizing: content-box;
+	margin: 20px 0px 0px 40px;
+	font-weight: bolder;
+	height: 30px;
+	background: #d8e2eb;
+}
+
+.links{
+	font-size: 12px;
+	margin-left: 43px;
+	font-weight: normal;
+	text-decoration: underline;
+	margin-top: 10px;
+}
+
+#links{
+	width: 290px;
+	display: flex;
 	margin: 0px;
+	justify-content: space-between;
+	align-items: center;
 }
