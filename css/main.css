@@ -1,116 +1,70 @@
-body{
+*{
 	margin: 0px;
-	display: flex;
-	flex-direction: column;
+	padding: 0px;
+	box-sizing: border-box;
 }
 
-#barra{
-	height: 65px;
-	background: #8c9cab;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-}
-
-img{
-	margin-left: 10px;
-}
-
-a{
-	text-decoration: none;
-	color: black;
-	font-weight: bolder;
-	font-size: 25px;
-}
-
-#container{
-	width: 100vw;
+body{
 	height: 100vh;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 	background-image: url("../imagens/fundo.jpeg");
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
 
-#campo-login{
-	padding: 50px;
-	padding-top: 0px;
-	background: #8c9cab;
-	box-sizing: content-box;
+.login{
+	width: 360px;
+	height: 360px;
+	padding: 20px;
+	border-radius: 12px;
+	background-color: #f2fbfc;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	margin-bottom: 45px;
 }
 
-#form{
+.login h1{
+	font-size: 36px;
+	margin-bottom: 25px;
+}
+
+.login form{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	font-size: 20px;
 }
 
-#titulo-login{
-	font-size: 30px;
-	font-family: 'Lucida Sans', sans-serif;
-}
-
-label{
-	margin-right: 5px;
-}
-
-.entrada{
-	width: 250px;
-	height: 28px;
-}
-
-#email{
+.campo{
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	flex-direction: column;
 }
 
-#senha{
-	margin-top: 10px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+.login form .form-group{
+	margin-bottom: 12px;
 }
 
-#botao{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	width: 295px;
-}
-
-#submit{
-	box-sizing: content-box;
-	margin: 20px 0px 0px 40px;
+.login form input[type="submit"] {
+	font-size: 20px;
+	padding: 5px;
 	font-weight: bolder;
-	height: 30px;
-	background: #d8e2eb;
+	margin-top: 15px;
+	background-color: #dadee0;
 }
 
-.links{
-	font-size: 12px;
-	margin-left: 43px;
-	font-weight: normal;
-	text-decoration: underline;
-	margin-top: 10px;
+.login form input[type="email"]{
+	padding: 10px;
+	margin-bottom: 10px;
 }
 
-#links{
-	width: 290px;
-	display: flex;
-	margin: 0px;
-	justify-content: space-between;
-	align-items: center;
+.login form input[type="password"]{
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+a{
+	color: black;
+	font-size: 15px;
+	font-weight: bold;
 }

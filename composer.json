@@ -1,0 +1,15 @@
+{
+    "name": "dalison/ler-a",
+    "autoload": {
+        "psr-4": {
+            "Dalison\\LerA\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dalison",
+            "email": "dalisonsr68@gmail.com"
+        }
+    ],
+    "require": {}
+}

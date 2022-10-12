@@ -1,68 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
 body{
-	margin: 0px;
+	background-image: url("../imagens/fundo.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
-#barra{
-	height: 40px;
-	background: #8c9cab;
-}
-
-.links{
-	font-size: 12px;
-	margin-left: 43px;
-}
-
-a{
-	text-decoration: none;
-	color: black;
-	font-weight: bolder;
-	font-size: 25px;
-}
-
-#container{
-	width: 100vw;
-	height: 100vh;
-	background: #34a8eb;
+.content{
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
-	align-items: center;
 }
 
-#campo-login{
-	padding: 10px;
-	margin-top: 10px;
-	background: #8c9cab;
-}
-
-#form{
-	width: 300px;
-	height: 350px;
-}
-
-#titulo-login{
+h1{
+	margin-bottom: 10px;
 	font-size: 30px;
-	font-family: 'Lucida Sans', sans-serif;
 }
 
-/*#email{
-	margin-top: 10px;
-}*/
-
-#senha{
-	margin-top: 10px;
+.contato{
+	margin-top: 60px;
+	width: 100%;
+	max-width: 500px;
 }
 
-/*#botao{
+.form{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}*/
+}
 
-#submit{
-	margin-top: 10px;
-	margin-left: 43px;
-	width: 63%;
+input{
+	border-radius: 5px;
+}
+
+.field{
+	padding: 10px;
+	margin-bottom: 35px;
+	border: 1px solid;
+}
+
+#botao{
+	font-size: 15px;
+	padding: 10px;
+	background-color: #dadee0;
 	font-weight: bolder;
 }
