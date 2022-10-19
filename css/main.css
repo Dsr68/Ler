@@ -1,70 +1,53 @@
 *{
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body{
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-image: url("../imagens/fundo.jpeg");
-	background-repeat: no-repeat;
-	background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../imagens/fundo.jpeg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.login{
-	width: 360px;
-	height: 360px;
-	padding: 20px;
-	border-radius: 12px;
-	background-color: #f2fbfc;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+form{
+  
+  flex-direction: column;
+  align-items: center;
+  background-color: #d2f0fc;
+  padding: 45px;
+  border-radius: 10px;
 }
 
-.login h1{
-	font-size: 36px;
-	margin-bottom: 25px;
+h1{
+  margin-bottom: 35px;
+  font-weight: bolder;
+  font-family: 'Gill Sans';
 }
 
-.login form{
-	display: flex;
-	flex-direction: column;
-	font-size: 20px;
+.entrada{
+  margin: 0px 10px 0 10px;
+  margin-bottom: 20px;
 }
 
-.campo{
-	display: flex;
-	flex-direction: column;
+#botoes{
+  width: 100%;
 }
 
-.login form .form-group{
-	margin-bottom: 12px;
+.botoes{
+  background-color: #098aed;;
 }
 
-.login form input[type="submit"] {
-	font-size: 20px;
-	padding: 5px;
-	font-weight: bolder;
-	margin-top: 15px;
-	background-color: #dadee0;
+.botoes:hover{
+  background-color: #75b9f0;
 }
 
-.login form input[type="email"]{
-	padding: 10px;
-	margin-bottom: 10px;
+#cadastrar{
+  width: 45%;
 }
 
-.login form input[type="password"]{
-	padding: 10px;
-	margin-bottom: 10px;
-}
-
-a{
-	color: black;
-	font-size: 15px;
-	font-weight: bold;
+#entrar{
+  width: 45%;
 }

@@ -1,32 +1,32 @@
-<!DOCTYPE html>
-<html lang=pt-br>
-<head>
-  <meta charset=UTF-8>
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min"/>
-  <link rel="stylesheet" type="text/css" href="css/main.css"/>
-</head>
-<body>
-	<div class="login">
-		<h1 class="text-center">Login</h1>
-		<form class="needs-validation" method="post" action="php/controller/login.php"> 
-			<div class="campo mb-3">
-				<label for="exampleFormControlInput1" class="form-label">E-mail</label>
-				<input type="email" class="form-control" id="exampleFormControlInput1" name="login">
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Biblioteca</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="css/main.css">
+
+	</head>
+	<body>
+		<script>
+			function irParaCadastro(){
+				window.location.href = "view/cadastrar.html";
+			}
+		</script>
+		<form  method="post" action="php/controller/login.php">
+			<h1>Login</h1>
+			<div><input class="entrada" type="text" placeholder="E-mail" name="login"></div>
+			<div><input class="entrada" type="password" placeholder="Senha" name="senha"></div>
+			<div class="entrada" id="botoes">
+				<input id="entrar" class="botoes" type="button" value="Cadastrar" onclick="irParaCadastro()">
+				<input id="cadastrar" class="botoes" type="submit" value="Entrar">
 			</div>
-			  
-			<div class=" campo mb-3">
-				<label for="exampleFormControlInput1" class="form-label">Senha</label>
-				<input type="password" class="form-control" id="exampleFormControlInput1" name="senha">
-			</div>
-			  
-			<input class="btn btn-success w-100" type="submit" value="Entrar">
-			<div>
-				<a href="#">Recuperar Senha</a>
-				<a href="view/cadastrar.html">Cadastrar</a>
-			</div>
-		</form>
-	</div>
-<script src="js/bootstrap.bundle.min.js"></script>
-</body>
+		</form>	
+	</body>
 </html>
+

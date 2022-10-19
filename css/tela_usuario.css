@@ -6,42 +6,39 @@
 body{
     height: 100vh;
     width: 100vw;
-    background-color: #d9dbde;
     /*background-image: url("../imagens/fundo.jpeg");
     background-repeat: no-repeat;
     background-size: 100%;*/
 }
 
-#corpo{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
 #catalogo{
-    height: 100%;
-    width: 90%;
-    background-color: #f2fbfc;
+    height: 93%;
+    width: 100%;
+    background-color: #d2f0fc;
     border-radius: 10px;
     
 }
 
 .dropdown-center{
-    width: 9.8%;
-    margin-right: 0.2%;
-    background-color: #4287f5;
+    width: 100%;
+    height: 7%;
+    background-color: #098aed;
 }
 
 #dropdown{
-    width: 100%;
     color: black;
-    background-color: #75b9f0;
-    font-weight: bolder;
+    background-color: #098aed;
+    width: 5%;
+    height: 95%;
 }
 
 .dropdown-menu{
     background-color: #75b9f0;
+}
+
+.dropdown-item{
+    color: black;
+    font-weight: bolder;
 }
 
 p{
@@ -53,6 +50,13 @@ img{
     height: 130px;
     margin: 20px;
     box-shadow: 5px 5px #898f8b;
+}
+
+#icone-menu{
+    margin: 0;
+    width: 80%;
+    height: 80%;
+    box-shadow: none;
 }
 
 .icones{
