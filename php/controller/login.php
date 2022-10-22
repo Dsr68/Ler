@@ -13,9 +13,15 @@ if(!empty($login)){
 
     foreach($pdo->query($sql) as $linha){
         if(($linha['email'] == $login) and ($linha['senha'] == $senha)){
-            header("Location: ../../view/tela_usuario.html");
+            header("Location: ../../view/tela_usuario.php");
+            break;
+        }
+        else{
+            header("Location: ../../view/erro_login.html");
         }
     }
-    
+
+    unset($pdo);
+
 }
 ?>

@@ -1,32 +1,35 @@
 <!doctype html>
 <html lang="en">
-  <head>
-  	<title>Biblioteca</title>
+
+<head>
+    <title>Biblioteca</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	
-	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-	</head>
-	<body>
-		<script>
-			function irParaCadastro(){
-				window.location.href = "view/cadastrar.html";
-			}
-		</script>
-		<form  method="post" action="php/controller/login.php">
-			<h1>Login</h1>
-			<div><input class="entrada" type="text" placeholder="E-mail" name="login"></div>
-			<div><input class="entrada" type="password" placeholder="Senha" name="senha"></div>
-			<div class="entrada" id="botoes">
-				<input id="entrar" class="botoes" type="button" value="Cadastrar" onclick="irParaCadastro()">
-				<input id="cadastrar" class="botoes" type="submit" value="Entrar">
-			</div>
-		</form>	
-	</body>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <script>
+        function irParaCadastro() {
+            window.location.href = "view/cadastrar.html";
+        }
+    </script>
+    <form method="post" action="php/controller/login.php">
+        <h1 class="entrada">Login</h1>
+        <div><input class="entrada" type="text" placeholder="E-mail" name="login" required></div>
+        <div><input class="entrada" type="password" placeholder="Senha" name="senha" required></div>
+        <div class="entrada" id="botoes">
+            <input id="entrar" class="botoes" type="button" value="Cadastrar" onclick="irParaCadastro()">
+            <input id="cadastrar" class="botoes" type="submit" value="Entrar">
+        </div>
+        <a class="entrada" href="#">Recuperar senha</a>
+    </form>
+</body>
+
 </html>
-

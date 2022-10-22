@@ -1,53 +1,57 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body{
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../imagens/fundo.jpeg");
-  display: flex;
-  align-items: center;
-  justify-content: center;
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../imagens/fundo.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.85;
 }
 
-form{
-  
-  flex-direction: column;
-  align-items: center;
-  background-color: #d2f0fc;
-  padding: 45px;
-  border-radius: 10px;
+form {
+    flex-direction: column;
+    align-items: center;
+    background-color: #d2f0fc;
+    padding: 80px 45px 80px 45px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px black;
 }
 
-h1{
-  margin-bottom: 35px;
-  font-weight: bolder;
-  font-family: 'Gill Sans';
+h1 {
+    margin-bottom: 35px;
+    font-weight: bolder;
+    font-family: 'Gill Sans';
 }
 
-.entrada{
-  margin: 0px 10px 0 10px;
-  margin-bottom: 20px;
+.entrada {
+    margin: 0px 10px 0 10px;
+    margin-bottom: 20px;
 }
 
-#botoes{
-  width: 100%;
+#botoes {
+    width: 100%;
 }
 
-.botoes{
-  background-color: #098aed;;
+.botoes {
+    background-color: #098aed;
+    ;
 }
 
-.botoes:hover{
-  background-color: #75b9f0;
+.botoes:hover {
+    background-color: #75b9f0;
 }
 
-#cadastrar{
-  width: 45%;
+#cadastrar {
+    width: 45%;
 }
 
-#entrar{
-  width: 45%;
+#entrar {
+    width: 45%;
 }

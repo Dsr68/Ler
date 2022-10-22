@@ -13,5 +13,13 @@ class Conexao{
         return self::$instance; 
 
     }
+
+    public static function getConexao2(){
+        if(!isset(self::$instance)){
+            self::$instance = new PDO('mysql:host=localhost;dbname=livros', 'dalison', '1610');
+        }
+        return self::$instance; 
+
+    }
 }
 ?>

@@ -1,48 +1,59 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body{
-	background-image: url("../imagens/fundo.jpeg");
-	background-repeat: no-repeat;
-	background-size: 100%;
+body {
+    background-image: url("../imagens/fundo.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-.content{
-	display: flex;
-	justify-content: center;
+.content {
+    display: flex;
+    justify-content: center;
 }
 
-h1{
-	margin-bottom: 10px;
-	font-size: 30px;
+#voltar {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.contato{
-	margin-top: 60px;
-	width: 100%;
-	max-width: 500px;
+#link-voltar {
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
 }
 
-.form{
-	display: flex;
-	flex-direction: column;
+h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
 }
 
-input{
-	border-radius: 5px;
+.contato {
+    margin-top: 60px;
+    width: 100%;
+    max-width: 500px;
 }
 
-.field{
-	padding: 10px;
-	margin-bottom: 35px;
-	border: 1px solid;
+.form {
+    display: flex;
+    flex-direction: column;
 }
 
-#botao{
-	font-size: 15px;
-	padding: 10px;
-	background-color: #dadee0;
-	font-weight: bolder;
+input {
+    border-radius: 5px;
+}
+
+.field {
+    padding: 10px;
+    margin-bottom: 35px;
+    border: 1px solid;
+}
+
+#botao {
+    font-size: 25px;
+    padding: 5px;
+    background-color: #dadee0;
+    font-weight: bolder;
 }

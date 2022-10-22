@@ -1,24 +1,30 @@
 <!DOCTYPE HTML>
 <html lang=pt-br>
+
 <head>
-  <meta charset=UTF-8>
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min"/>
-  <link rel="stylesheet" type="text/css" href="../css/cadastrar.css"/>
+    <meta charset=UTF-8>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min" />
+    <link rel="stylesheet" type="text/css" href="../css/cadastrar.css" />
 </head>
+
 <body>
-	<section class="content">
-		<div class="contato">
-			<h1>Cadastro</h1>
-			<form class="form" method="post" action="../php/controller/cadastrar.php">
-				<input class="field" type="text" name="nome" placeholder="Nome">
-				<input class="field" type="text" name="sobrenome" placeholder="Sobrenome">
-				<input class="field" type="email" name="email" placeholder="E-mail">
-				<input class="field" type="password" name="senha1" placeholder="Senha">
-				<input class="field" type="password" name="senha2" placeholder="Digite a Senha novamente">
-				<input id="botao" type="submit" value="Cadastrar">
-			</form>
-		</div>
-	</section>
+    <div id="voltar">
+        <a id="link-voltar" href="../index.html">Voltar</a>
+    </div>
+    <section class="content">
+        <div class="contato">
+            <h1>Cadastro</h1>
+            <form class="form" method="post" action="../php/controller/cadastrar.php">
+                <input class="field" type="text" name="nome" placeholder="Nome" required>
+                <input class="field" type="text" name="sobrenome" placeholder="Sobrenome" required>
+                <input class="field" type="email" name="email" placeholder="E-mail" required>
+                <input class="field" type="password" name="senha1" placeholder="Senha" required minlength="6">
+                <input class="field" type="password" name="senha2" placeholder="Digite a Senha novamente">
+                <input id="botao" type="submit" value="Cadastrar">
+            </form>
+        </div>
+    </section>
 </body>
+
 </html>
