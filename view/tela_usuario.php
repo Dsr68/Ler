@@ -17,25 +17,10 @@
                 <img class="icones-menu" src="../imagens/menu.png" alt="">
             </button>
             <ul class="dropdown-menu">
-                <li>
-                    <a class="dropdown-item" href="#"><img class="icones" src="../imagens/conta.png" alt="">Minha conta</a>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="#"><img class="icones" src="../imagens/livro.png" alt="">Meus Livros</a>
-                </li>
-                <li id="categorias">
-                    <div class="dropdown-item">
-                        <div><img class="icones" src="../imagens/filtro.png" alt="">Categorias</div>
-                        <select class="dropdown-item" size="3" aria-label="size 3 select example">
-                            <option selected>teste1</option>
-                            <option value="1">teste2</option>
-                            <option value="1">teste3</option>
-                        </select>
-                    </div>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="#"><img class="icones" src="../imagens/sair.png" alt="">Sair</a>
-                </li>
+                <?php
+                include_once __DIR__."/../php/controller/tela_usuario.php";
+                IMGs::getOpcoes(); 
+                ?>
             </ul>
         </div>
             <div id="barra-direita">
@@ -45,8 +30,10 @@
     </div>
     <div id="catalogo">
         <?php
-            include_once "../php/controller/tela_usuario.php";
-            IMGs::getImagens();
+            include_once __DIR__."/../php/controller/tela_usuario.php";
+            
+                IMGs::getImagens();
+
         ?>
     </div>
 

@@ -94,3 +94,16 @@ img {
     height: 35px;
     box-shadow: none;
 }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+#categorias:hover {
+    background-color: #75b9f0;
+}
