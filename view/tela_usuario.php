@@ -16,10 +16,10 @@
             <button id="dropdown" class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="true">
                 <img class="icones-menu" src="../imagens/menu.png" alt="">
             </button>
-            <ul class="dropdown-menu">
+            <ul  class="dropdown-menu">
                 <?php
                 include_once __DIR__."/../php/controller/tela_usuario.php";
-                IMGs::getOpcoes(); 
+                    IMGs::getOpcoes();
                 ?>
             </ul>
         </div>
@@ -28,6 +28,11 @@
                 <img class="icones-menu" src="../imagens/lupa.png" alt="">
             </div>
     </div>
+            <?php
+            include_once "../php/controller/tela_usuario.php";
+
+            IMGs::getCategorias();
+            ?>
     <div id="catalogo">
         <?php
             include_once __DIR__."/../php/controller/tela_usuario.php";
@@ -36,7 +41,7 @@
 
         ?>
     </div>
-
+    <script src="../js/classificar.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
