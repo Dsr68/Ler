@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/tela_usuario.css">
+    <link rel="stylesheet" href="../css/detalhes.css">
     <title>Document</title>
 </head>
-
 <body>
     <div id="barra">
         <div class="dropdown-center">
@@ -28,20 +28,18 @@
                 <img class="icones-menu" src="../imagens/lupa.png" alt="">
             </div>
     </div>
-            <?php
-            include_once "../php/controller/tela_usuario.php";
-
-            IMGs::getCategorias();
-            ?>
     <div id="catalogo">
-        <?php
-            include_once __DIR__."/../php/controller/tela_usuario.php";
-            
-                IMGs::getImagens();
+        <div id="livros">
+            <?php
+                include_once __DIR__."/../php/controller/tela_usuario.php";
+                
+                    IMGs::getImagens();
 
-        ?>
+            ?>
+        </div>
     </div>
     <script src="../js/classificar.js"></script>
+    <script src="../js/detalhar.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 

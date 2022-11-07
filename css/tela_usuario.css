@@ -16,19 +16,32 @@ body {
     display: flex;
     flex-direction: row;
     height: 10%;
+    align-items: center;
     justify-content: space-between;
-    background-color: #098aed;
+    background-color: azure;
 }
 
 #catalogo {
-    height: 90%;
     width: 100%;
-    background-color: #d2f0fc;
+    height: 100%;
+    background-color: #d2f0fc; 
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#exibicao{
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    border: #898f8b solid 2px;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .dropdown-center {
     width: 5%;
-    background-color: #098aed;
+    height: 2%;
+    background-color: azure;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,20 +49,22 @@ body {
 
 #dropdown {
     color: black;
-    background-color: #098aed;
+    background-color: azure;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 
 .dropdown-menu {
-    background-color: #75b9f0;
+    background-color: azure;
+    width: 220px;
 }
 
 .dropdown-item {
     color: black;
+    background-color: #d2f0fc;
     font-weight: bolder;
 }
 
@@ -71,10 +86,17 @@ body {
     border-radius: 20px;
 }
 
+#livros{
+    width: 50%;
+    height: 100%;
+    background-color: #d2f0fc;
+    display: flex;
+    flex-flow: row wrap;
+}
+
 img {
-    width: 100px;
+    width: 120px;
     height: 130px;
-    margin: 20px;
     box-shadow: 5px 5px #898f8b;
 }
 
@@ -95,6 +117,10 @@ img {
     box-shadow: none;
 }
 
+.selecao{
+    background-color: azure;
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -102,6 +128,7 @@ a {
 
 li {
     list-style-type: none;
+    margin-bottom: 5px;
 }
 
 #opcao {
@@ -114,4 +141,8 @@ li {
 
 #botao {
     background-color: #098aed;
+}
+
+.livros{
+    margin: 10px;
 }

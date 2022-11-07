@@ -1,0 +1,15 @@
+
+.img-demostracao{
+    width: 150px;
+    height: 160px;
+    margin: 10px;
+}
+
+h1{
+    font-size: 15px;
+}
+
+#titulo{
+    margin-top: 10px;
+    font-weight: bolder;
+}

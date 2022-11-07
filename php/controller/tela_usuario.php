@@ -8,14 +8,15 @@ class IMGs{
   public static function getImagens(){
     $pdo = Conexao::getConexao2();
 
-      $sql = "SELECT titulo, endereco FROM livro";
+      $sql = "SELECT titulo, endereco, id FROM livro";
 
       $query = $pdo->query($sql);
       /*var_dump($query);*/
 
       foreach($query as $linha){
         $capa = $linha[1];
-        echo '<a href="#"><img src="'.$capa.'" ></a>';
+        echo '<a href="#" onclick="detalhar('.$linha[2].')"><img class="livros"' 
+        .'src="'.$capa.'" ></a>';
       }
 
       unset($pdo);
@@ -38,14 +39,18 @@ class IMGs{
     $livros = '<li class="dropdown-item"><a href="#"><img class="icones" src='
     .'"../imagens/livro.png">Meus livros</a></li>';
     
-    $sair = '<li class="dropdown-item"><a href="#"><img class="icones" src='
+    $sair = '<li class="dropdown-item selecao"><a href="#"><img class="icones" src='
     .'"../imagens/sair.png">Sair</a></li>';
 
-    $menu = array($conta, $livros, $sair);
+    $menu = array($conta, $livros);
 
     foreach($menu as $item => $value){
       echo $menu[$item];
     }
+
+    IMGs::getCategorias();
+
+    echo $sair;
 
   }
 
@@ -57,15 +62,16 @@ class IMGs{
 
       $query = $pdo->query($sql);
     
-    echo '<select id="categorias" name="cat" onchange="visualizar()">';
-    echo '<option selected="selected" value="0" class="dropdown-item">'
+    echo '<li class="dropdown-item selecao"><select id="categorias" name="cat"' 
+    .'onchange="visualizar()">';
+    echo '<option selected value="0" class="dropdown-item">'
     .'Categorias</option>';
     
     foreach($query as $linha){
       echo '<option value="'.$linha[0].'">'.$linha[1].'</option>';
     }
 
-    echo "</select>";
+    echo "</select> </li>";
 
     unset($pdo);
   }
