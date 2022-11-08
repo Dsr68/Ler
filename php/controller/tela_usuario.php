@@ -64,7 +64,7 @@ class IMGs{
     
     echo '<li class="dropdown-item selecao"><select id="categorias" name="cat"' 
     .'onchange="visualizar()">';
-    echo '<option selected value="0" class="dropdown-item">'
+    echo '<option selected value="" class="dropdown-item">'
     .'Categorias</option>';
     
     foreach($query as $linha){

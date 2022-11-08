@@ -15,34 +15,27 @@
         var livros_selecionados = [];
 
         for (var i = 0; i < resposta.length; i++) {
-            livros.push(resposta[i].endereco);
-        }
-
-        for (var i = 0; i < resposta.length; i++) {
             if (resposta[i].categoria == categoria) {
                 livros_selecionados.push(resposta[i]);
             }
         }
 
-        console.log(livros);
+        console.log(categoria);
 
-        if (categoria != 0) {
+        if (categoria != "") {
             for (var i = 0; i < livros_selecionados.length; i++) {
-                lista.innerHTML = lista.innerHTML + '<div id="livros"'
-                +'<a href="#" onclick="detalhar(' 
-                + livros_selecionados[i].id 
-                +')"><img class="livros"'
-                + 'src="' +
-                    livros_selecionados[i].endereco + '" /></img></a> </div>';
+                lista.innerHTML = lista.innerHTML + '<a href="#" onclick="detalhar(' +
+                    livros_selecionados[i].id +
+                    ')"><img class="livros"' +
+                    'src="' +
+                    livros_selecionados[i].endereco + '" ></img></a>';
             }
         } else {
             for (var i = 0; i < livros.length; i++) {
-                lista.innerHTML = lista.innerHTML + '<div id="livros"'
-                + '<a href="#" onclick="detalhar('
-                + livros_selecionados[i].id
-                ')"><img class="livros"'
-                +   'src="'
-                + livros[i].endereco + '"></img></a> </div>';
+                lista.innerHTML = lista.innerHTML + '<a href="#" onclick="detalhar(' +
+                    resposta[i].id + ')"><img class="livros"' +
+                    'src="' +
+                    resposta[i].endereco + '"></img></a>';
             }
         }
     }

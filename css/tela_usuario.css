@@ -24,12 +24,12 @@ body {
 #catalogo {
     width: 100%;
     height: 100%;
-    background-color: #d2f0fc; 
+    background-color: #d2f0fc;
     display: flex;
     flex-flow: row wrap;
 }
 
-#exibicao{
+#exibicao {
     height: 100%;
     width: 50%;
     background-color: white;
@@ -86,7 +86,7 @@ body {
     border-radius: 20px;
 }
 
-#livros{
+#livros {
     width: 50%;
     height: 100%;
     background-color: #d2f0fc;
@@ -117,7 +117,7 @@ img {
     box-shadow: none;
 }
 
-.selecao{
+.selecao {
     background-color: azure;
 }
 
@@ -143,6 +143,6 @@ li {
     background-color: #098aed;
 }
 
-.livros{
+.livros {
     margin: 10px;
 }

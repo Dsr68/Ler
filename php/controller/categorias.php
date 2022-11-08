@@ -3,7 +3,7 @@ include_once __DIR__."/../model/conexao.php";
 
 $pdo = Conexao::getConexao2();
 
-$sql = 'SELECT id, titulo, endereco, categoria FROM livro ORDER BY titulo';
+$sql = 'SELECT id, titulo, endereco, categoria, descricao FROM livro ORDER BY titulo';
   $query = $pdo->query($sql);
 
 foreach($query as $linha){
@@ -11,7 +11,8 @@ foreach($query as $linha){
     "id" => $linha[0],
     "titulo" => $linha[1],
     "endereco" => $linha[2],
-    "categoria" => $linha[3]
+    "categoria" => $linha[3],
+    "descricao" => $linha[4]
   ];
     
 }
