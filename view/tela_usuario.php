@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,24 +22,25 @@
                 ?>
             </ul>
         </div>
-            <div id="barra-direita">
-                <input id="campo-pesquisa" type="text" name="" id="">
-                <img class="icones-menu" src="../imagens/lupa.png" alt="">
-            </div>
+            <form action="" method="POST" id="barra-direita">
+                <input id="campo-pesquisa" type="text" name="pesquisa">
+            <input type="submit" name="pesquisar" value="Buscar">
+            </form>
+        </div>
     </div>
     <div id="catalogo">
         <div id="livros">
             <?php
                 include_once __DIR__."/../php/controller/tela_usuario.php";
-                
                     IMGs::getImagens();
-
             ?>
         </div>
     </div>
     <script src="../js/classificar.js"></script>
     <script src="../js/detalhar.js"></script>
+    <script src="../js/pesquisar.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </body>
 
 </html>

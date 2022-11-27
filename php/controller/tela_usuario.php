@@ -33,9 +33,6 @@ class IMGs{
 
       unset($pdo);
 
-    $conta = '<li class="dropdown-item"><a href="#"><img class="icones" src='
-    .'"../imagens/conta.png">Minha conta</a></li>';
-
     $livros = '<li class="dropdown-item"><a href="#"><img class="icones" src='
     .'"../imagens/livro.png">Meus livros</a></li>';
     
@@ -75,4 +72,5 @@ class IMGs{
 
     unset($pdo);
   }
+
 }

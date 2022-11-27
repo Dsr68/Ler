@@ -1,6 +1,6 @@
 <?php
 
-require_once '../model/conexao.php';
+require_once __DIR__.'/../model/conexao.php';
 
 $login = $_POST["login"];
 $senha = $_POST["senha"];

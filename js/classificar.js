@@ -3,10 +3,6 @@
         console.log(categoria);
 
         var lista = document.getElementById("livros");
-        var copia = document.getElementById("livros");
-
-        lista.innerHTML = "";
-        lista = copia;
 
         const dados = await fetch("../php/controller/categorias.php");
         const resposta = await dados.json();
@@ -20,18 +16,19 @@
             }
         }
 
-        console.log(categoria);
+        console.log(livros_selecionados);
 
-        if (categoria != "") {
+        if (categoria) {
+            lista.innerHTML = "";
             for (var i = 0; i < livros_selecionados.length; i++) {
-                lista.innerHTML = lista.innerHTML + '<a href="#" onclick="detalhar(' +
-                    livros_selecionados[i].id +
-                    ')"><img class="livros"' +
-                    'src="' +
-                    livros_selecionados[i].endereco + '" ></img></a>';
+                lista.innerHTML = lista.innerHTML +
+                    '<a href="#" onclick="detalhar(' +
+                    livros_selecionados[i].id + ')"><img class="livros"' +
+                    'src="' + livros_selecionados[i].endereco + '"></img></a>';
             }
         } else {
-            for (var i = 0; i < livros.length; i++) {
+            lista.innerHTML = "";
+            for (var i = 0; i < resposta.length; i++) {
                 lista.innerHTML = lista.innerHTML + '<a href="#" onclick="detalhar(' +
                     resposta[i].id + ')"><img class="livros"' +
                     'src="' +

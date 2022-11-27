@@ -22,7 +22,7 @@ async function detalhar(id) {
         '<div id="exibicao">' +
         '<img class="img-demostracao" src="' +
         detalhes[0].endereco + '"></img>' +
-        '<div><h1 id="titulo">' + detalhes[0].titulo + '</h1>' +
+        '<div id="texto"><h1 id="titulo">' + detalhes[0].titulo + '</h1>' +
         detalhes[0].descricao +
         '<button id="btn-ler">Ler</button>'
     '</div></div>';

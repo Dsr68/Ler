@@ -31,7 +31,7 @@ body {
 
 #exibicao {
     height: 100%;
-    width: 50%;
+    width: 55%;
     background-color: white;
     border: #898f8b solid 2px;
     display: flex;
@@ -83,11 +83,12 @@ body {
 }
 
 #campo-pesquisa {
-    border-radius: 20px;
+    border-radius: 5px;
+    margin-right: 5px;
 }
 
 #livros {
-    width: 50%;
+    width: 45%;
     height: 100%;
     background-color: #d2f0fc;
     display: flex;
