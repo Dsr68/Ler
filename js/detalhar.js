@@ -24,6 +24,7 @@ async function detalhar(id) {
         detalhes[0].endereco + '"></img>' +
         '<div id="texto"><h1 id="titulo">' + detalhes[0].titulo + '</h1>' +
         detalhes[0].descricao +
-        '<button id="btn-ler">Ler</button>'
-    '</div></div>';
+        '<button id="btn-ler" onclick="' +
+        'ler()">Ler</button>' +
+        '</div></div>';
 }

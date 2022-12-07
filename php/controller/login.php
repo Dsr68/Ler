@@ -1,10 +1,15 @@
 <?php
+session_start();
+
+$_SESSION["login"] = $_POST["login"];
+$_SESSION["senha"] = $_POST["senha"];
+$_SESSION["entrar"] = $_POST["entrar"];
 
 require_once __DIR__.'/../model/conexao.php';
 
-$login = $_POST["login"];
-$senha = $_POST["senha"];
-$botao = $_POST["entrar"];
+$login = $_SESSION["login"];
+$senha  = $_SESSION["senha"];
+$entrar = $_SESSION["entrar"];
 
 $pdo = Conexao::getConexao();
 

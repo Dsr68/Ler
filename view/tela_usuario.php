@@ -31,8 +31,8 @@
     <div id="catalogo">
         <div id="livros">
             <?php
-                include_once __DIR__."/../php/controller/tela_usuario.php";
-                    IMGs::getImagens();
+                include_once __DIR__."/../php/controller/tela_usuario.php"; 
+                IMGs::getImagens();
             ?>
         </div>
     </div>
@@ -40,7 +40,7 @@
     <script src="../js/detalhar.js"></script>
     <script src="../js/pesquisar.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="../js/ler.js"></script>
 </body>
 
 </html>
